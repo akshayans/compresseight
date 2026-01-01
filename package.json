@@ -1,34 +1,15 @@
 {
-  "dependencies": {
-    "prompts": "^2.4.2",
-    "qrcode": "^1.5.3",
-    "yesno": "^0.4.0"
-  },
-  "name": "qrcode-cmd",
-  "version": "1.0.1",
-  "description": "A package to generate QR codes right in your terminal!",
-  "main": "qr.js",
+  "name": "compresseight",
+  "version": "1.0.0",
   "bin": {
-    "qrcode-cmd": "index.js"
+    "compresseight": "./compress.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "pkg": {
+    "targets": ["node18-win-x64"],
+    "icon": "icon.ico"
   },
-  "keywords": [
-    "qrcode",
-    "qr",
-    "cmd",
-    "shell",
-    "image"
-  ],
-  "author": "AFHStudio",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akshayans/qrcode-cmd.git"
-  },
-  "bugs": {
-    "url": "https://github.com/akshayans/qrcode-cmd/issues"
-  },
-  "homepage": "https://github.com/akshayans/qrcode-cmd#readme"
+  "dependencies": {
+    "figlet": "^1.9.4",
+    "progress": "^2.0.3"
+  }
 }
